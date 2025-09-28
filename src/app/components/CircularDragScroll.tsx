@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useLayoutEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { Draggable } from "gsap/Draggable";
 import { MotionPathPlugin } from "gsap/MotionPathPlugin";
@@ -45,7 +45,7 @@ export default function CircularDragBoxes() {
     },
   ];
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const boxes = gsap.utils.toArray<HTMLElement>(".box");
     const step = 360 / boxes.length;
 
