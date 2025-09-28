@@ -39,32 +39,33 @@ function Navbar() {
           </svg>
         </Link>
         <div className="sm:hidden">
-          <label htmlFor="terms" className="flex group items-center p-4 bg-[#F9F4EE] flex-col gap-1">
-          <input
-            type="checkbox"
-            name="terms"
-            id="terms"
-            className="hidden peer"
-          />
-          <div className="h-screen peer-checked:left-0 backdrop-blur-[4px] w-screen absolute top-0 left-full bg-[rgba(0,0,0,0.3)] -z-20"></div>
-           <div className="h-screen peer-checked:left-3/5 transition-all duration-700 w-screen absolute top-0 left-full bg-white -z-10">
-            <ul className="w-full h-full pt-24 flex flex-col justify-start items-end gap-4">
-          {NavbarLinks.map((link) => (
-            <li
-              key={link.name}
-              className="inline-block underline w-full text-left px-4 hover:text-blue-500"
-            >
-              <Link href={link.link}>{link.name}</Link>
-            </li>
-          ))}
-        </ul>
+          <label
+            htmlFor="terms"
+            className="flex group items-center p-4 bg-[#F9F4EE] flex-col gap-1"
+          >
+            <input
+              type="checkbox"
+              name="terms"
+              id="terms"
+              className="hidden peer"
+            />
+            <div className="h-screen peer-checked:left-0 backdrop-blur-[4px] w-screen absolute top-0 left-full bg-[rgba(0,0,0,0.3)] -z-20"></div>
+            <div className="h-screen peer-checked:left-3/5 transition-all duration-700 w-screen absolute top-0 left-full bg-white -z-10">
+              <ul className="w-full h-full pt-24 flex flex-col justify-start items-end gap-4">
+                {NavbarLinks.map((link) => (
+                  <li
+                    key={link.name}
+                    className="inline-block underline w-full text-left px-4 hover:text-blue-500"
+                  >
+                    <Link href={link.link}>{link.name}</Link>
+                  </li>
+                ))}
+              </ul>
             </div>
-<span className="w-6 h-0.5 bg-black"></span>
+            <span className="w-6 h-0.5 bg-black"></span>
             <span className="w-5 h-0.5 bg-black"></span>
             <span className="w-6 h-0.5 bg-black"></span>
-          
-        </label>
-          
+          </label>
         </div>
       </div>
     </div>

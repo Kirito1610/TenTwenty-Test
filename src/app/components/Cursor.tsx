@@ -8,7 +8,7 @@ const CustomCursor = ({
   container: RefObject<HTMLDivElement | null>;
 }) => {
   const cursorRef = useRef<HTMLDivElement>(null);
-  const Imagecrousel = container.current
+  const Imagecrousel = container.current;
   useEffect(() => {
     const cursor = cursorRef.current;
 

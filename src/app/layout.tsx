@@ -3,10 +3,15 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Assignment Test",
-  description: "Pixel perfect assignment implementation with Next.js + Tailwind",
+  description:
+    "Pixel perfect assignment implementation with Next.js + Tailwind",
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body>{children}</body>

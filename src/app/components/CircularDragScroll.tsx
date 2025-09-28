@@ -102,11 +102,14 @@ export default function CircularDragBoxes() {
                     {text.description}
                   </p>
                 </div>
-              )
+              ),
           )}
         </div>
       </div>
-      <div ref={containerRef} className="relative mx-auto w-[90vw] h-[90vw] container">
+      <div
+        ref={containerRef}
+        className="relative mx-auto w-[90vw] h-[90vw] container"
+      >
         <svg viewBox="0 0 400 400" className="absolute inset-0">
           <path
             id="myPath"
@@ -132,7 +135,7 @@ export default function CircularDragBoxes() {
           </div>
         ))}
       </div>
-      <CustomCursor container={containerRef}  />
+      <CustomCursor container={containerRef} />
     </div>
   );
 }

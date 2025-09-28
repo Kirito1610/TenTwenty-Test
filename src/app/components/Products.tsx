@@ -1,4 +1,4 @@
-'use client';
+"use client";
 import React, { useEffect, useRef } from "react";
 import CircularDragScroll from "./CircularDragScroll";
 import "../styles/animate.css";
@@ -22,7 +22,7 @@ function Products() {
           }
         });
       },
-      { threshold: 0.1 } // Trigger when 10% of the section is visible
+      { threshold: 0.1 }, // Trigger when 10% of the section is visible
     );
 
     observer.observe(section);

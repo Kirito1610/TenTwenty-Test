@@ -37,7 +37,10 @@
   pointer-events: none; /* Ensures the cursor doesn't interfere with other interactions */
   z-index: 9999; /* Ensure it stays on top */
   user-select: none; /* Prevents text selection */
-  transform: translate(-50%, -50%); /* Center the cursor on the mouse position */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Center the cursor on the mouse position */
 }
 
 /* Hide the default cursor */
