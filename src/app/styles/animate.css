@@ -1,0 +1,46 @@
+.animate-title {
+  opacity: 0; /* Initial state */
+}
+.animate-paragraph {
+  opacity: 0; /* Initial state */
+}
+.start-animation.animate-title {
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+.start-animation.animate-paragraph {
+  animation: fadeInUp 0.8s ease-out 0.3s forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* CustomCursor.css */
+.custom-cursor {
+  position: absolute;
+  width: 80px; /* Matches the circle size in the image */
+  height: 80px;
+  background: white;
+  border-radius: 50%; /* Creates a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px; /* Adjust text size as needed */
+  color: black;
+  pointer-events: none; /* Ensures the cursor doesn't interfere with other interactions */
+  z-index: 9999; /* Ensure it stays on top */
+  user-select: none; /* Prevents text selection */
+  transform: translate(-50%, -50%); /* Center the cursor on the mouse position */
+}
+
+/* Hide the default cursor */
+.container img {
+  cursor: none;
+}
