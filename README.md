@@ -15,6 +15,8 @@ I’ve set up everything manually to ensure flexibility, scalability, and perfor
 
 🎭 Smooth animations – Added subtle transitions and animations for a better user experience.
 
+🎞 GSAP animations – Used GSAP for advanced animations on the second section.
+
 📱 Responsive design – Fully responsive across desktop and mobile.
 
 🎛 Custom configuration – Centralized configs created from zero for easy maintenance.
@@ -62,3 +64,5 @@ Next.js
 TypeScript
 
 Tailwind CSS
+
+GSAP
